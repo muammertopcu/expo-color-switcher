@@ -1,4 +1,4 @@
-import {render} from "@testing-library/react-native";
+import {fireEvent, render} from "@testing-library/react-native";
 import {Container} from "@/components";
 import {Text} from "react-native";
 
@@ -16,5 +16,17 @@ describe('Container component', () => {
 
     expect(getByTestId('container'))
     expect(getByTestId('children'))
+  })
+
+  it('should be change bg color when pressed container', () => {
+    const { getByTestId } = render(<Container />);
+
+    const container = getByTestId('container')
+
+    const color = container.props.style.backgroundColor
+
+    fireEvent(container, 'onPress')
+
+    expect(container.props.style.backgroundColor).not.toEqual(color)
   })
 })

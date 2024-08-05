@@ -9,3 +9,8 @@ This Application display the text "Hello There" in the middle of the screen, bac
 - [Typescript](https://www.typescriptlang.org)
 - [Jest](https://jestjs.io)
 - [React Native Testing Library](https://testing-library.com/docs/react-native-testing-library/intro)
+
+---
+
+#### References
+- [Random Hex code Generator](https://css-tricks.com/snippets/javascript/random-hex-color/)
